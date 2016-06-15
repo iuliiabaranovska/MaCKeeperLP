@@ -1,4 +1,4 @@
-@import "../assets/css/normalizer/normalize";
+@import "../styles/normalizer/normalize";
 @include normalize();
 @font-face {
     font-family: "ProximaNovaBold";
@@ -43,15 +43,12 @@ $percentage) {
 }
 
 .layout {
-    width: 60%;
+    width: 65%;
     margin: 0 auto 0 auto;
 }
 
 .arrow--shadow {
-    transform: rotate(45deg);
-    // -webkit-box-shadow: 8px 8px 19px -5px #d5d7da;
-    // -moz-box-shadow: 8px 8px 19px -5px #d5d7da;
-    // box-shadow: 8px 8px 19px -5px #d5d7da;
+    transform: rotate(45deg);    
     -webkit-filter: drop-shadow(5px 5px 3px tint(#d5d7da, 65));
     -moz-filter: drop-shadow(5px 5px 3px tint(#d5d7da, 65));
     filter: drop-shadow(5px 5px 3px tint(#d5d7da, 65));
@@ -69,7 +66,6 @@ $percentage) {
 .header__arrow {
     margin-top: -0.8em;
     margin-left: 10em;
-    //z-index: 1000;
     position: relative;
 }
 
@@ -128,7 +124,6 @@ $percentage) {
     -moz-box-shadow: 0 0 22px tint(#d0d3d6, 10);
     -webkit-box-shadow: 0 0 22px tint(#d0d3d6, 10);
     box-shadow: 0 0 22px tint(#d0d3d6, 10);
-    //z-index: 100;
     position: relative;
     &>content {
         display: flex;
@@ -219,66 +214,58 @@ $percentage) {
     border-top: 1px solid #f1f7fa;
 }
 
+.client{
+    background-size: contain;
+    flex: 1;
+    -webkit-filter: opacity(30%);
+    filter: opacity(30%);
+}
+
 .clients {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    height: 2vw;
-    padding-top: 1.5em;
+    height: 2em;
+    padding: 1.5em 0;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     &>.cnn {
-        background: url("../images/cnn.png") top center no-repeat;
-        background-size: contain;
-        flex: 1;
-        -webkit-filter: opacity(30%);
-        filter: opacity(30%);
-        //width: 30%;
+        background: url("../images/cnn.png") center center no-repeat;        
     }
     &>.dezzain {
-        background: url("../images/dezzain.png") top center no-repeat;
-        background-size: contain;
-        flex: 1;
-        -webkit-filter: opacity(30%);
-        filter: opacity(30%);
-        //width: 30%;
+        background: url("../images/dezzain.png") center center no-repeat;        
     }
     &>.forbes {
-        background: url("../images/forbes.png") top center no-repeat;
-        background-size: contain;
-        flex: 1;
-        -webkit-filter: opacity(30%);
-        filter: opacity(30%);
-        //width: 30%;
+        background: url("../images/forbes.png") center center no-repeat;       
     }
     &>.machmachines {
-        background: url("../images/machmachines.png") top center no-repeat;
-        background-size: contain;
-        flex: 1;
-        -webkit-filter: opacity(30%);
-        filter: opacity(30%);
-        //width: 30%;
+        background: url("../images/machmachines.png") center center no-repeat;       
     }
 }
 
 .tiles--outer{
 	background-color: #f3f6f8;
+    z-index: 1;
+    padding: 2%;
 }
 
 .tiles__header{
 	text-align: center;
     font-family: $ProximaNovaRegular;
     font-size: 1.5vw;
-    color:#181818;
+    color: #181818;
+    margin-bottom: 1.3%;
 }
 
 .tiles--inner{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	&>.tiles{
-		flex: 2;
+	&>.hex__container{
+        flex: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
 	}
 	&>.description{
 		flex:1;
