@@ -55,7 +55,7 @@
             <div class="machmachines"></div>
         </article>
         <div class="tiles--outer">
-            <h2 class="tiles__header">What we have to keep your Mac <span class="blue">clean and safe</span></h2>
+            <div class="tiles__header">What we have to keep your Mac <span class="blue">clean and safe</span></div>
             <section class="tiles--inner layout">
                 <ul id="hexGrid">
                     <li class="hex">
@@ -208,7 +208,7 @@
         <p>You may be presented with an optional offer(s) during installation <span class="link blue">learn more</span></p>
         <div class="copyright">Copyright © 2016 Kromtech Alliance Corp. All rights reserved.</div>
     </footer>
-    <svg id="hexagon" version="1.1" width="30" height="300" xmlns="http://www.w3.org/2000/svg">
+    <svg id="hexagon" version="1.1" xmlns="http://www.w3.org/2000/svg">
     </svg>
     <script>
     function hexPoints(x, y, radius) {
@@ -224,8 +224,13 @@
     var x, y, row, col, pointX, pointY, theta;
     var svg = document.getElementById('hexagon');
     var radius = 30;
-    for (col = 0; col < ; col += 1) {
-        for (row = 0; row < 4; row += 1) {
+    for (col = 0; col < 6; col += 1) {
+        for (row = 0; row < 3; row += 1) {
+
+            if(col === 5 && (row % 2) === 1) {
+                continue;
+            }
+
             var offset = (Math.sqrt(3) * radius *1.5) / 2;
             x = 40 + offset * col * 2;
             y = 40 + offset * row * Math.sqrt(3);

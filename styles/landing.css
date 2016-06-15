@@ -557,7 +557,10 @@ th {
   background-color: #f3f6f8; }
 
 .tiles__header {
-  text-align: center; }
+  text-align: center;
+  font-family: "ProximaNovaRegular", sans-serif;
+  font-size: 1.5vw;
+  color: #181818; }
 
 .tiles--inner {
   display: flex;
