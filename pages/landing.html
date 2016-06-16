@@ -24,13 +24,14 @@
         <article class="presentation layout">
             <content class="steps">
                 <div class="step">
-                    <img src="../images/icon1.png"><span class="bold uppercase">Step 1:</span><span>Click</span><a href="#" class="link blue">"Download now"</a>
+                    <img src="../images/icon1.png"><span class="bold black uppercase">Step 1:</span><span>Click</span><a href="#" class="link blue">"Download now"</a>
                 </div>
                 <div class="step">
-                    <img src="../images/icon2.png"><span class="bold uppercase">Step 2:</span><span>Click</span><span class="bold">"Run"</span><span>or</span><span class="bold">"Save"</span>
+                    <img src="../images/icon2.png"><span class="bold black uppercase">Step 2:</span><span>Click</span><span class="bold black">"Run"</span><span>or</span>
+                    <span class="bold black">"Save"</span>
                 </div>
                 <div class="step">
-                    <img src="../images/icon3.png"><span class="bold uppercase">Step 3:</span><span>Scan your Mac</span>
+                    <img src="../images/icon3.png"><span class="bold black uppercase">Step 3:</span><span>Scan your Mac</span>
                 </div>
                 <button class="button presentation__button">Download now</button>
                 <a href="#" class="link link--underbutton">or Click here to download</a>
@@ -55,9 +56,9 @@
             <div class="client machmachines"></div>
         </article>
         <div class="tiles--outer">
-            <div class="tiles__header">What we have to keep your Mac <span class="blue">clean and safe</span></div>
+            <div class="tiles__header black">What we have to keep your Mac <span class="blue">clean and safe</span></div>
             <section class="tiles--inner layout">
-                <article class="hex__container">                    
+                <article class="hex__container">
                     <div class="hex" style="background-image: url(images/2.jpg);">
                         <a href="#"></a>
                         <div class="corner-1"></div>
@@ -145,11 +146,13 @@
                     </div>
                 </article>
                 <article class="description">
-                    <div class="icon">{{icon}}</div>
-                    <p class="name">{{name}}</p>
+                    <div class="icon--wrapper">
+                        <div class="icon"><!-- {{icon}} --></div>
+                        <p class="name black uppercase"><!-- {{name}} -->Memory cleaner</p>
+                    </div>
                     <div class="action--wrapper">
-                        <p class="acction">{{action}}</p>
-                        <button class="button action__button"></button>
+                        <p class="acction"><!-- {{action}} -->Automatically optimizes and monitors your Mac’s RAM memory while you are performing your daily tasks.</p>
+                        <button class="button action__button">Download Now</button>
                     </div>
                 </article>
             </section>
@@ -176,7 +179,7 @@
         <p>** This statement is solely our subjective opinion ans is used purely for advertising and promotional purpose.</p>
         <p>You may be presented with an optional offer(s) during installation <span class="link blue">learn more</span></p>
         <div class="copyright">Copyright © 2016 Kromtech Alliance Corp. All rights reserved.</div>
-    </footer>    
+    </footer>
 </body>
 
 </html>
